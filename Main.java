@@ -2,29 +2,14 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-      String data="Parul University";
-      data.toUpperCase();
-      System.out.println(data);
-      
-      StringBuffer bf=new StringBuffer("Hello");
-      bf.append(" Student ");
-      System.out.println(bf);
-      
-      bf.insert(6,"Smart ");
-      System.out.println(bf);
-      
-      bf.replace(0,2,"A");
-      System.out.println(bf);
-      
-      bf.delete(5,11);
-      System.out.println(bf);
-      
-      bf.reverse();
-      System.out.println(bf);
-      bf.reverse();
-      
-      bf.setCharAt(3,'Z');
-      System.out.println(bf);
-      
+      // find the all possible  substring form the given stirng 
+      // using for lopp
+      // using recurssion
+      String data="abcd";
+      for(int i=0;i<=data.length();i++){
+        for(int j=i+1;j<=data.length();j++){
+          System.out.println(data.substring(i,j));
+        }
+      }
   }
 }
